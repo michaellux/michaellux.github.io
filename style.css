@@ -1,0 +1,79 @@
+div.left 
+{display:inline-block; float: left;
+position: relative;
+margin-right: 10px;
+
+}
+
+div.right{
+float:right;
+position: relative;
+}
+div.center{overflow: hidden;/*Для запрета обтекания float 
+	http://cssing.org.ua/2010/04/26/overflow-hidden/   */
+clear:both;/*Ключевой момент. 
+Если выполнить без этой строчки на первый взгляд покажется, что всё выполнено верно. 
+Но если изменить ширину окна браузера, и воспользовавшись инспектором DOM и стилей, 
+можно заметить, что последний элемент не входит в div.container */
+}
+/*Добавлен альтернативный текст белого цвета, чтобы убрать знаки незагруженного изображения*/
+.left img[alt] 
+{color:white;}
+.right img[alt]
+{color:white;}
+
+.left  span{margin-left: 35px;}
+/* Задаём цвета для букв */
+span.color_g
+{
+color: #22a12a;
+}
+span.color_or
+{
+color: #f2a414;
+}
+span.color_r
+{
+color: #c10e0e;
+}
+span.color_gr
+{
+color: #646464;
+}
+span.color_red
+{
+	color: #ff0000;
+}
+span.color_b
+{
+	color: #036da3;
+}
+span.color_r_chrome
+{
+	color: #c90000;
+	margin-left:0px; /* убирает "пробелы" между spanами */
+}
+span.color_y
+{
+	color: #f9d411;
+	margin-left:0px; /* убирает "пробелы" между spanами */
+}
+
+/*Скрытие подписей к картинкам*/
+.mask{/* для всех браузеров кроме IE */
+background-color: white;
+		width:60px;
+		height: 40px;
+		top:140px;
+		left:30px;
+		position: absolute;
+	}
+
+.mask_ie{/*для IE */
+background-color: white;
+		width:60px;
+		height: 60px;
+		top:140px;
+		left:0px;
+		position: absolute;
+	}
