@@ -17,6 +17,8 @@ clear:both;/*Ключевой момент.
 можно заметить, что последний элемент не входит в div.container */
 }
 /*Добавлен альтернативный текст белого цвета, чтобы убрать знаки незагруженного изображения*/
+
+
 .left img[alt] 
 {color:white;}
 .right img[alt]
@@ -76,4 +78,13 @@ background-color: white;
 		top:140px;
 		left:0px;
 		position: absolute;
+	}
+.mask_break{
+
+width:100%;
+height:180px;
+background-color:white;
+position:absolute;
+
+
 	}
